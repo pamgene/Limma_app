@@ -1,0 +1,136 @@
+{
+ "kind": "TableSchema",
+ "id": "14984138ced1ec063fb368ad4761706175e1e0ea4fc4a3d3096d579c563e5b8c",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "c07_super_2group_control_pair.tsv",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "14984138ced1ec063fb368ad4761706175e1e0ea4fc4a3d3096d579c563e5b8c"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "nRows": 1600,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "db440b83-12e3-462a-ab8f-12b66b52e565",
+   "name": "Observation",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "34cdba47-264c-47d9-8ff9-6060e950fdf8",
+   "name": "Variable",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "2efd591e-c046-411d-b947-d51b4361b500",
+   "name": "Group",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "c52b1f74-cdb8-4560-a1b2-dbfc71dbc992",
+   "name": "Supergroup",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "09edc4a4-4840-48c6-9a80-8a6601d1ae11",
+   "name": "Pair",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "6a7cc126-9236-4708-8a78-e34f1b35e689",
+   "name": "Measurement",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  }
+ ],
+ "dataDirectory": "data/14/98/14984138ced1ec063fb368ad4761706175e1e0ea4fc4a3d3096d579c563e5b8c",
+ "relation": {
+  "kind": "Relation",
+  "id": "c9dc7001-0061-49ea-929d-e888e1461943"
+ }
+}
