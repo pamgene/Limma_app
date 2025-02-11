@@ -95,20 +95,20 @@
   },
   {
    "kind": "Link",
-   "id": "eb598648-d809-44d4-a342-20edbdc796e7",
+   "id": "66a03890-c13f-4fd1-9cb3-19efe1c4834e",
    "inputId": "ebda5081-aae4-45fc-b91b-f7b4b19d402a-i-0",
    "outputId": "e86c99b9-0bf2-4725-b857-aa2063400e34-o-0"
   },
   {
    "kind": "Link",
-   "id": "b1340fb4-2bd0-4b83-8dce-3d11907f815a",
+   "id": "c85ed6b0-c39c-45c2-9b0f-b6df2c581c0b",
    "inputId": "e86c99b9-0bf2-4725-b857-aa2063400e34-i-0",
-   "outputId": "86141ca9-c75e-4c39-9141-7f582a34ad74-o-0"
+   "outputId": "3cd9cb18-8bbc-45d1-9680-8ce23cc79bad-o-0"
   },
   {
    "kind": "Link",
-   "id": "382ce03d-513d-4f97-9cc5-f624253223a1",
-   "inputId": "7f0f3259-4223-4066-b9d0-9c238f202602-i-0",
+   "id": "fb2d5f0d-c999-4b8b-8f1a-b1c1006c914a",
+   "inputId": "293688ac-f007-4713-9a06-7b92c64dea62-i-0",
    "outputId": "ebda5081-aae4-45fc-b91b-f7b4b19d402a-o-0"
   }
  ],
@@ -144,7 +144,7 @@
     "topLeft": {
      "kind": "Point",
      "x": 728.505,
-     "y": 179.61111111111111
+     "y": 182.61111111111111
     }
    },
    "state": {
@@ -319,10 +319,16 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "LIMMA PSA",
-      "version": "0.0.1",
+      "version": "0.0.5",
       "operatorId": "1",
       "operatorKind": "ROperator",
-      "propertyValues": [],
+      "propertyValues": [
+       {
+        "kind": "PropertyValue",
+        "name": "ReverseContrast",
+        "value": "true"
+       }
+      ],
       "url": {
        "kind": "Url",
        "uri": "https://github.com/pamgene/limma_psa_operator"
@@ -374,7 +380,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "03d4e4d3-22b9-48ed-b79d-53a5d197b6a0"
+    "id": "2c88fb92-2ead-46ce-9d7f-feb2f45d6786"
    },
    "parentDataStepId": ""
   },
@@ -657,7 +663,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "f5f3ecee-3954-4e1a-9069-d27c45a07444"
+    "id": "69926299-450a-43e7-a7dd-f7adf4bfdbb0"
    },
    "parentDataStepId": ""
   },
@@ -1005,14 +1011,35 @@
        "kind": "GraphicalFactor",
        "factor": {
         "kind": "Factor",
-        "name": "ds0.p.value",
+        "name": "ds0.pvalue",
         "type": "double"
        },
        "rectangle": {
         "kind": "Rectangle",
         "extent": {
          "kind": "Point",
-         "x": 110.0,
+         "x": 100.0,
+         "y": 30.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      },
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "ds0.FDR",
+        "type": "double"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 70.0,
          "y": 30.0
         },
         "topLeft": {
@@ -1024,13 +1051,13 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 200
+     "nRows": 392
     },
     "taskId": ""
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "78deb004-7c77-45fe-bf1a-97856a546c4e"
+    "id": "2d3a734e-a2a7-48db-b54a-bdefd889d8d8"
    },
    "parentDataStepId": ""
   },
@@ -1375,7 +1402,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "f1d0a53b-0531-42f1-ae45-f57d4614baaf"
+    "id": "017649c1-d3dd-4910-bc29-8b4f287324cb"
    },
    "parentDataStepId": ""
   },
@@ -1648,7 +1675,7 @@
          "stringValue": "0.05",
          "factor": {
           "kind": "Factor",
-          "name": "ds0.p.value",
+          "name": "ds0.pvalue",
           "type": "double"
          }
         }
@@ -1713,13 +1740,13 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 32
+     "nRows": 8
     },
     "taskId": ""
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "84b5d309-f3a2-463e-b904-440bfa583048"
+    "id": "ee400440-ea39-476d-a8d7-e6f958a55438"
    },
    "parentDataStepId": ""
   },
@@ -1746,7 +1773,7 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 893.505,
+     "x": 892.505,
      "y": 431.5
     }
    },
@@ -1789,8 +1816,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 718.2827777777782,
-     "y": 95.72222222222263
+     "x": 723.2827777777782,
+     "y": 56.722222222222626
     }
    },
    "state": {
@@ -1881,7 +1908,7 @@
       ],
       "factorName": "Supergroup",
       "isSingle": false,
-      "isRequired": false
+      "isRequired": true
      },
      {
       "kind": "MappingFactor",
@@ -2045,13 +2072,13 @@
   },
   {
    "kind": "InStep",
-   "id": "86141ca9-c75e-4c39-9141-7f582a34ad74",
+   "id": "3cd9cb18-8bbc-45d1-9680-8ce23cc79bad",
    "groupId": "",
    "name": "Input",
    "inputs": [
     {
      "kind": "InputPort",
-     "id": "86141ca9-c75e-4c39-9141-7f582a34ad74-i-0",
+     "id": "3cd9cb18-8bbc-45d1-9680-8ce23cc79bad-i-0",
      "linkType": "any",
      "name": "from"
     }
@@ -2059,7 +2086,7 @@
    "outputs": [
     {
      "kind": "OutputPort",
-     "id": "86141ca9-c75e-4c39-9141-7f582a34ad74-o-0",
+     "id": "3cd9cb18-8bbc-45d1-9680-8ce23cc79bad-o-0",
      "linkType": "any",
      "name": "to"
     }
@@ -2073,8 +2100,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 711.8383333333338,
-     "y": -13.16666666666626
+     "x": 714.8383333333338,
+     "y": -46.16666666666626
     }
    },
    "state": {
@@ -2093,13 +2120,13 @@
   },
   {
    "kind": "OutStep",
-   "id": "7f0f3259-4223-4066-b9d0-9c238f202602",
+   "id": "293688ac-f007-4713-9a06-7b92c64dea62",
    "groupId": "",
    "name": "Output",
    "inputs": [
     {
      "kind": "InputPort",
-     "id": "7f0f3259-4223-4066-b9d0-9c238f202602-i-0",
+     "id": "293688ac-f007-4713-9a06-7b92c64dea62-i-0",
      "linkType": "any",
      "name": "from"
     }
@@ -2107,7 +2134,7 @@
    "outputs": [
     {
      "kind": "OutputPort",
-     "id": "7f0f3259-4223-4066-b9d0-9c238f202602-o-0",
+     "id": "293688ac-f007-4713-9a06-7b92c64dea62-o-0",
      "linkType": "any",
      "name": "to"
     }
@@ -2121,8 +2148,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 930.505,
-     "y": 181.6111111111111
+     "x": 879.505,
+     "y": 171.6111111111111
     }
    },
    "state": {
@@ -2142,8 +2169,8 @@
  ],
  "offset": {
   "kind": "Point",
-  "x": 102.66666666666623,
-  "y": 170.66666666666626
+  "x": 33.66666666666623,
+  "y": 173.66666666666626
  },
  "scale": 1.0
 }
