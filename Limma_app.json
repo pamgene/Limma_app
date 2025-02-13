@@ -95,20 +95,20 @@
   },
   {
    "kind": "Link",
-   "id": "66a03890-c13f-4fd1-9cb3-19efe1c4834e",
+   "id": "a3ff710e-f91b-4d2b-b97c-605931fb48ea",
    "inputId": "ebda5081-aae4-45fc-b91b-f7b4b19d402a-i-0",
    "outputId": "e86c99b9-0bf2-4725-b857-aa2063400e34-o-0"
   },
   {
    "kind": "Link",
-   "id": "c85ed6b0-c39c-45c2-9b0f-b6df2c581c0b",
+   "id": "ad536a08-15c9-4e6a-b1aa-537af479e1ea",
    "inputId": "e86c99b9-0bf2-4725-b857-aa2063400e34-i-0",
-   "outputId": "3cd9cb18-8bbc-45d1-9680-8ce23cc79bad-o-0"
+   "outputId": "1b8f36b3-8fa1-4c01-9ea7-011df2517fe5-o-0"
   },
   {
    "kind": "Link",
-   "id": "fb2d5f0d-c999-4b8b-8f1a-b1c1006c914a",
-   "inputId": "293688ac-f007-4713-9a06-7b92c64dea62-i-0",
+   "id": "2de98ca2-0e82-4f12-b82e-958c3f8f6d01",
+   "inputId": "06c6d12e-51c5-4186-966c-fc836479c4b7-i-0",
    "outputId": "ebda5081-aae4-45fc-b91b-f7b4b19d402a-o-0"
   }
  ],
@@ -319,7 +319,7 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "LIMMA PSA",
-      "version": "0.0.5",
+      "version": "0.0.7",
       "operatorId": "1",
       "operatorKind": "ROperator",
       "propertyValues": [
@@ -380,7 +380,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "2c88fb92-2ead-46ce-9d7f-feb2f45d6786"
+    "id": "d4df55e0-66d1-4cf5-aa88-d440e33fe644"
    },
    "parentDataStepId": ""
   },
@@ -592,10 +592,31 @@
          "y": 0.0
         }
        }
+      },
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "ds0.contrast",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 120.0,
+         "y": 30.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
       }
      ],
      "rectangleSelections": [],
-     "nRows": 2
+     "nRows": 4
     },
     "filters": {
      "kind": "Filters",
@@ -663,7 +684,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "69926299-450a-43e7-a7dd-f7adf4bfdbb0"
+    "id": "af8d7c20-9015-4f66-9990-714a47091b8f"
    },
    "parentDataStepId": ""
   },
@@ -690,7 +711,7 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 728.505,
+     "x": 729.505,
      "y": 348.5
     }
    },
@@ -920,7 +941,7 @@
     },
     "rowTable": {
      "kind": "CrosstabTable",
-     "cellSize": 26.0,
+     "cellSize": 15.692307692307692,
      "offset": 0,
      "graphicalFactors": [
       {
@@ -1051,13 +1072,13 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 392
+     "nRows": 692
     },
     "taskId": ""
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "2d3a734e-a2a7-48db-b54a-bdefd889d8d8"
+    "id": "18997549-9e26-4989-8e22-2ba7a90de8fa"
    },
    "parentDataStepId": ""
   },
@@ -1323,7 +1344,7 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 16
+     "nRows": 15
     },
     "filters": {
      "kind": "Filters",
@@ -1396,13 +1417,13 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 100
+     "nRows": 173
     },
     "taskId": ""
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "017649c1-d3dd-4910-bc29-8b4f287324cb"
+    "id": "8a6c8961-5624-454e-86b9-c7ac8810d6a6"
    },
    "parentDataStepId": ""
   },
@@ -1746,7 +1767,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "ee400440-ea39-476d-a8d7-e6f958a55438"
+    "id": "98cd9b91-d0f5-4783-a500-2e204fd5f304"
    },
    "parentDataStepId": ""
   },
@@ -1816,8 +1837,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 723.2827777777782,
-     "y": 56.722222222222626
+     "x": 728.2827777777782,
+     "y": 86.72222222222263
     }
    },
    "state": {
@@ -2026,7 +2047,7 @@
       ],
       "factorName": "Supergroup",
       "isSingle": false,
-      "isRequired": false
+      "isRequired": true
      },
      {
       "kind": "MappingFactor",
@@ -2072,13 +2093,13 @@
   },
   {
    "kind": "InStep",
-   "id": "3cd9cb18-8bbc-45d1-9680-8ce23cc79bad",
+   "id": "1b8f36b3-8fa1-4c01-9ea7-011df2517fe5",
    "groupId": "",
    "name": "Input",
    "inputs": [
     {
      "kind": "InputPort",
-     "id": "3cd9cb18-8bbc-45d1-9680-8ce23cc79bad-i-0",
+     "id": "1b8f36b3-8fa1-4c01-9ea7-011df2517fe5-i-0",
      "linkType": "any",
      "name": "from"
     }
@@ -2086,7 +2107,7 @@
    "outputs": [
     {
      "kind": "OutputPort",
-     "id": "3cd9cb18-8bbc-45d1-9680-8ce23cc79bad-o-0",
+     "id": "1b8f36b3-8fa1-4c01-9ea7-011df2517fe5-o-0",
      "linkType": "any",
      "name": "to"
     }
@@ -2100,8 +2121,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 714.8383333333338,
-     "y": -46.16666666666626
+     "x": 727.8383333333338,
+     "y": -21.16666666666626
     }
    },
    "state": {
@@ -2120,13 +2141,13 @@
   },
   {
    "kind": "OutStep",
-   "id": "293688ac-f007-4713-9a06-7b92c64dea62",
+   "id": "06c6d12e-51c5-4186-966c-fc836479c4b7",
    "groupId": "",
    "name": "Output",
    "inputs": [
     {
      "kind": "InputPort",
-     "id": "293688ac-f007-4713-9a06-7b92c64dea62-i-0",
+     "id": "06c6d12e-51c5-4186-966c-fc836479c4b7-i-0",
      "linkType": "any",
      "name": "from"
     }
@@ -2134,7 +2155,7 @@
    "outputs": [
     {
      "kind": "OutputPort",
-     "id": "293688ac-f007-4713-9a06-7b92c64dea62-o-0",
+     "id": "06c6d12e-51c5-4186-966c-fc836479c4b7-o-0",
      "linkType": "any",
      "name": "to"
     }
@@ -2148,8 +2169,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 879.505,
-     "y": 171.6111111111111
+     "x": 869.505,
+     "y": 174.6111111111111
     }
    },
    "state": {
@@ -2169,7 +2190,7 @@
  ],
  "offset": {
   "kind": "Point",
-  "x": 33.66666666666623,
+  "x": 35.66666666666623,
   "y": 173.66666666666626
  },
  "scale": 1.0
