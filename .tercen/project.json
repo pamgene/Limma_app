@@ -25,6 +25,6 @@
   "kind": "Url",
   "uri": "https://github.com/pamgene/Limma_app"
  },
- "version": "0.0.4",
- "isPublic": true
+ "version": "0.0.5",
+ "isPublic": false
 }

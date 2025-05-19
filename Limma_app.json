@@ -107,20 +107,20 @@
   },
   {
    "kind": "Link",
-   "id": "cfb4137e-bc66-4384-b91b-2dd6049586f7",
+   "id": "9046c6fb-d2cd-41a5-8569-b2c9e9ce98bc",
    "inputId": "ebda5081-aae4-45fc-b91b-f7b4b19d402a-i-0",
    "outputId": "e86c99b9-0bf2-4725-b857-aa2063400e34-o-0"
   },
   {
    "kind": "Link",
-   "id": "82fa5fee-5e5f-4d45-8bb7-28b1e509edb4",
+   "id": "a91995a2-544c-4bf1-93d4-2b7884054e05",
    "inputId": "e86c99b9-0bf2-4725-b857-aa2063400e34-i-0",
-   "outputId": "3eecfa11-a8eb-47b1-b93a-8741befa23b3-o-0"
+   "outputId": "05d5e078-fa28-499d-9bda-2b5e8b87e952-o-0"
   },
   {
    "kind": "Link",
-   "id": "15eb6461-4a6c-4f0a-a01c-9edeb892bd5d",
-   "inputId": "4a4cef76-f9ba-417d-85eb-9122168ea089-i-0",
+   "id": "36969f03-0325-4ba1-a9b7-fe65e5f76e7a",
+   "inputId": "c41f6783-ee86-4504-9f92-08c73cfb90e4-i-0",
    "outputId": "ebda5081-aae4-45fc-b91b-f7b4b19d402a-o-0"
   }
  ],
@@ -392,7 +392,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "4afeb3ef-03fd-4515-89e3-2b8224b5318e"
+    "id": "4f21f760-c9f1-4b89-a459-a71d0539c027"
    },
    "parentDataStepId": ""
   },
@@ -426,8 +426,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 717.5370483398438,
-     "y": 456.5
+     "x": 721.5370483398438,
+     "y": 458.5
     }
    },
    "state": {
@@ -609,6 +609,27 @@
        "kind": "GraphicalFactor",
        "factor": {
         "kind": "Factor",
+        "name": "ds0.contrast",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 120.0,
+         "y": 30.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      },
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
         "name": "FC.count",
         "type": "double"
        },
@@ -638,27 +659,6 @@
         "extent": {
          "kind": "Point",
          "x": 90.0,
-         "y": 30.0
-        },
-        "topLeft": {
-         "kind": "Point",
-         "x": 0.0,
-         "y": 0.0
-        }
-       }
-      },
-      {
-       "kind": "GraphicalFactor",
-       "factor": {
-        "kind": "Factor",
-        "name": "ds0.contrast",
-        "type": "string"
-       },
-       "rectangle": {
-        "kind": "Rectangle",
-        "extent": {
-         "kind": "Point",
-         "x": 120.0,
          "y": 30.0
         },
         "topLeft": {
@@ -738,7 +738,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "b9680c54-4f03-45ca-ba67-7079dcb458e4"
+    "id": "a041bb51-6704-44da-afdd-09e7c8ee0d05"
    },
    "parentDataStepId": ""
   },
@@ -1132,7 +1132,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "221c8ca4-b13b-4462-8a2b-54bb85b6cc4c"
+    "id": "f6be6228-df8f-42af-a9ba-01c85f1f91d5"
    },
    "parentDataStepId": ""
   },
@@ -1159,7 +1159,7 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 576.505,
+     "x": 575.505,
      "y": 353.5
     }
    },
@@ -1412,7 +1412,7 @@
       "kind": "OperatorRef",
       "name": "Scale (Z-Score)",
       "version": "0.12.2",
-      "operatorId": "1",
+      "operatorId": "0",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -1477,7 +1477,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "90726ff5-b307-48fd-9bc6-6a439b7f6b49"
+    "id": "bf24e7c4-2817-48d6-af90-c1b00ba0dcd8"
    },
    "parentDataStepId": ""
   },
@@ -1822,7 +1822,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "7b63aa2d-8442-4a95-9088-479df7bbda81"
+    "id": "3ec9a824-d3c2-470c-a7c9-debbf042e4c6"
    },
    "parentDataStepId": ""
   },
@@ -2308,7 +2308,28 @@
        "kind": "GraphicalFactor",
        "factor": {
         "kind": "Factor",
-        "name": "ds0.Supergroup",
+        "name": "ds0..Supergroup",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 150.0,
+         "y": 30.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      },
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "ds0.contrast",
         "type": "string"
        },
        "rectangle": {
@@ -2373,7 +2394,7 @@
       "kind": "OperatorRef",
       "name": "Count",
       "version": "1.0.2",
-      "operatorId": "0",
+      "operatorId": "1",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -2427,7 +2448,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "5e06eaa7-5539-43df-b195-497e0c819783"
+    "id": "40174d86-8c8e-47b1-85a4-027e2fbceacb"
    },
    "parentDataStepId": ""
   },
@@ -2593,7 +2614,7 @@
        "kind": "GraphicalFactor",
        "factor": {
         "kind": "Factor",
-        "name": "ds0.Supergroup",
+        "name": "ds0..Supergroup",
         "type": "string"
        },
        "rectangle": {
@@ -2601,6 +2622,27 @@
         "extent": {
          "kind": "Point",
          "x": 0.0,
+         "y": 30.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      },
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "ds0.contrast",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 120.0,
          "y": 30.0
         },
         "topLeft": {
@@ -2647,7 +2689,7 @@
       "kind": "OperatorRef",
       "name": "Count",
       "version": "1.0.2",
-      "operatorId": "0",
+      "operatorId": "1",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -2701,19 +2743,19 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "65127598-64c2-4dbf-a8f1-3d6b17212991"
+    "id": "be3459e3-6404-49a8-a112-04fa4101d71d"
    },
    "parentDataStepId": ""
   },
   {
    "kind": "InStep",
-   "id": "3eecfa11-a8eb-47b1-b93a-8741befa23b3",
+   "id": "05d5e078-fa28-499d-9bda-2b5e8b87e952",
    "groupId": "",
    "name": "Input",
    "inputs": [
     {
      "kind": "InputPort",
-     "id": "3eecfa11-a8eb-47b1-b93a-8741befa23b3-i-0",
+     "id": "05d5e078-fa28-499d-9bda-2b5e8b87e952-i-0",
      "linkType": "any",
      "name": "from"
     }
@@ -2721,7 +2763,7 @@
    "outputs": [
     {
      "kind": "OutputPort",
-     "id": "3eecfa11-a8eb-47b1-b93a-8741befa23b3-o-0",
+     "id": "05d5e078-fa28-499d-9bda-2b5e8b87e952-o-0",
      "linkType": "any",
      "name": "to"
     }
@@ -2735,8 +2777,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 731.8383333333338,
-     "y": -8.16666666666626
+     "x": 729.8383333333338,
+     "y": -17.16666666666626
     }
    },
    "state": {
@@ -2755,13 +2797,13 @@
   },
   {
    "kind": "OutStep",
-   "id": "4a4cef76-f9ba-417d-85eb-9122168ea089",
+   "id": "c41f6783-ee86-4504-9f92-08c73cfb90e4",
    "groupId": "",
    "name": "Output",
    "inputs": [
     {
      "kind": "InputPort",
-     "id": "4a4cef76-f9ba-417d-85eb-9122168ea089-i-0",
+     "id": "c41f6783-ee86-4504-9f92-08c73cfb90e4-i-0",
      "linkType": "any",
      "name": "from"
     }
@@ -2769,7 +2811,7 @@
    "outputs": [
     {
      "kind": "OutputPort",
-     "id": "4a4cef76-f9ba-417d-85eb-9122168ea089-o-0",
+     "id": "c41f6783-ee86-4504-9f92-08c73cfb90e4-o-0",
      "linkType": "any",
      "name": "to"
     }
@@ -2783,8 +2825,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 916.505,
-     "y": 158.6111111111111
+     "x": 1042.505,
+     "y": 171.6111111111111
     }
    },
    "state": {
@@ -2804,7 +2846,7 @@
  ],
  "offset": {
   "kind": "Point",
-  "x": 61.66666666666623,
+  "x": 62.66666666666623,
   "y": 71.66666666666626
  },
  "scale": 1.0
