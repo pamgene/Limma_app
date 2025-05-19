@@ -1,10 +1,10 @@
 {
  "kind": "TableSchema",
- "id": "14984138ced1ec063fb368ad4761706175e1e0ea4fc4a3d3096d579c563e5b8c",
+ "id": "560d55eda80e509637b1465c0f867715fbc1cb2188802b52ecd5a72d7431363d",
  "isDeleted": false,
  "rev": "",
  "description": "",
- "name": "c07_super_2group_control_pair.tsv",
+ "name": "row",
  "acl": {
   "kind": "Acl",
   "owner": "",
@@ -23,8 +23,28 @@
  "meta": [
   {
    "kind": "Pair",
+   "key": "ds0..Variable.size_in_bytes",
+   "value": "3096"
+  },
+  {
+   "kind": "Pair",
+   "key": "Supergroup.size_in_bytes",
+   "value": "4096"
+  },
+  {
+   "kind": "Pair",
+   "key": "ds0.contrast.size_in_bytes",
+   "value": "5896"
+  },
+  {
+   "kind": "Pair",
+   "key": "hidden",
+   "value": "true"
+  },
+  {
+   "kind": "Pair",
    "key": "SHA256",
-   "value": "14984138ced1ec063fb368ad4761706175e1e0ea4fc4a3d3096d579c563e5b8c"
+   "value": "560d55eda80e509637b1465c0f867715fbc1cb2188802b52ecd5a72d7431363d"
   }
  ],
  "url": {
@@ -35,56 +55,11 @@
  "isPublic": false,
  "projectId": "",
  "folderId": "",
- "nRows": 1600,
+ "nRows": 200,
  "columns": [
   {
    "kind": "ColumnSchema",
-   "id": "db440b83-12e3-462a-ab8f-12b66b52e565",
-   "name": "Observation",
-   "type": "string",
-   "nRows": 0,
-   "size": -1,
-   "metaData": {
-    "kind": "ColumnSchemaMetaData",
-    "sort": [],
-    "ascending": true,
-    "quartiles": [],
-    "properties": []
-   }
-  },
-  {
-   "kind": "ColumnSchema",
-   "id": "34cdba47-264c-47d9-8ff9-6060e950fdf8",
-   "name": "Variable",
-   "type": "string",
-   "nRows": 0,
-   "size": -1,
-   "metaData": {
-    "kind": "ColumnSchemaMetaData",
-    "sort": [],
-    "ascending": true,
-    "quartiles": [],
-    "properties": []
-   }
-  },
-  {
-   "kind": "ColumnSchema",
-   "id": "2efd591e-c046-411d-b947-d51b4361b500",
-   "name": "Group",
-   "type": "string",
-   "nRows": 0,
-   "size": -1,
-   "metaData": {
-    "kind": "ColumnSchemaMetaData",
-    "sort": [],
-    "ascending": true,
-    "quartiles": [],
-    "properties": []
-   }
-  },
-  {
-   "kind": "ColumnSchema",
-   "id": "c52b1f74-cdb8-4560-a1b2-dbfc71dbc992",
+   "id": "6c3427cc-05a8-4f0a-906d-1d78efdfa589",
    "name": "Supergroup",
    "type": "string",
    "nRows": 0,
@@ -99,8 +74,8 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "09edc4a4-4840-48c6-9a80-8a6601d1ae11",
-   "name": "Pair",
+   "id": "65076ff2-eb74-4bee-856b-b0930196879f",
+   "name": "ds0.contrast",
    "type": "string",
    "nRows": 0,
    "size": -1,
@@ -114,8 +89,53 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "6a7cc126-9236-4708-8a78-e34f1b35e689",
-   "name": "Measurement",
+   "id": "a6d0ee26-5625-46ba-b144-12fa8711ef6c",
+   "name": "ds0..Variable",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "e8e9ce01-da06-4327-aa65-74c3a8cfa305",
+   "name": "ds0.logFC",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "652d99ae-4169-43a1-803c-e9206f8beb8e",
+   "name": "ds0.pvalue",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "f20eb24d-67da-45c1-93bf-2ea02305d3af",
+   "name": "ds0.FDR",
    "type": "double",
    "nRows": 0,
    "size": -1,
@@ -128,10 +148,10 @@
    }
   }
  ],
- "dataDirectory": "data/14/98/14984138ced1ec063fb368ad4761706175e1e0ea4fc4a3d3096d579c563e5b8c",
+ "dataDirectory": "data/56/0d/560d55eda80e509637b1465c0f867715fbc1cb2188802b52ecd5a72d7431363d",
  "relation": {
   "kind": "Relation",
-  "id": "c9dc7001-0061-49ea-929d-e888e1461943"
+  "id": "860d2921-0c15-49b7-b672-dfcfefd62f85"
  },
- "size": 59608
+ "size": 118536
 }
