@@ -1,10 +1,10 @@
 {
- "kind": "FileDocument",
- "id": "README.md",
+ "kind": "TableSchema",
+ "id": "5",
  "isDeleted": false,
  "rev": "",
  "description": "",
- "name": "README.md",
+ "name": "Export-Limma_app-Export",
  "acl": {
   "kind": "Acl",
   "owner": "",
@@ -29,15 +29,14 @@
  "isPublic": false,
  "projectId": "",
  "folderId": "",
- "dataUri": "lfs/8b/d1/54dabc75ad836ede222e39cdcbfe9a72de5f78610a899e5dcdc2424f28b0",
- "metadata": {
-  "kind": "FileMetadata",
-  "contentType": "",
-  "cacheControl": "",
-  "contentEncoding": "",
-  "contentLanguage": "",
-  "md5Hash": ""
+ "nRows": 0,
+ "columns": [],
+ "dataDirectory": "",
+ "relation": {
+  "kind": "SimpleRelation",
+  "id": "c54cdc2a5059a6316165088d7eae70bdb20aa3693997b346d488e351872e1160",
+  "index": 0
  },
- "size": 142,
- "storageSize": 142.0
+ "size": 0,
+ "storageSize": 0.0
 }

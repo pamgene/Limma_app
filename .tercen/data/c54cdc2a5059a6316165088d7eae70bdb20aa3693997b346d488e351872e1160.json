@@ -1,6 +1,6 @@
 {
  "kind": "TableSchema",
- "id": "560d55eda80e509637b1465c0f867715fbc1cb2188802b52ecd5a72d7431363d",
+ "id": "c54cdc2a5059a6316165088d7eae70bdb20aa3693997b346d488e351872e1160",
  "isDeleted": false,
  "rev": "",
  "description": "",
@@ -23,18 +23,18 @@
  "meta": [
   {
    "kind": "Pair",
-   "key": "ds0..Variable.size_in_bytes",
-   "value": "3096"
-  },
-  {
-   "kind": "Pair",
    "key": "Supergroup.size_in_bytes",
    "value": "4096"
   },
   {
    "kind": "Pair",
-   "key": "ds0.contrast.size_in_bytes",
-   "value": "5896"
+   "key": "LIMMA.ds0.contrast.size_in_bytes",
+   "value": "5904"
+  },
+  {
+   "kind": "Pair",
+   "key": "LIMMA.ds0..Variable.size_in_bytes",
+   "value": "3104"
   },
   {
    "kind": "Pair",
@@ -44,7 +44,7 @@
   {
    "kind": "Pair",
    "key": "SHA256",
-   "value": "560d55eda80e509637b1465c0f867715fbc1cb2188802b52ecd5a72d7431363d"
+   "value": "c54cdc2a5059a6316165088d7eae70bdb20aa3693997b346d488e351872e1160"
   }
  ],
  "url": {
@@ -59,7 +59,7 @@
  "columns": [
   {
    "kind": "ColumnSchema",
-   "id": "6c3427cc-05a8-4f0a-906d-1d78efdfa589",
+   "id": "629ea0b4-6aaa-40b7-b21c-3479238198a5",
    "name": "Supergroup",
    "type": "string",
    "nRows": 0,
@@ -71,12 +71,12 @@
     "quartiles": [],
     "properties": []
    },
-   "storageSize": 0.0
+   "storageSize": -1.0
   },
   {
    "kind": "ColumnSchema",
-   "id": "65076ff2-eb74-4bee-856b-b0930196879f",
-   "name": "ds0.contrast",
+   "id": "ed76c0d8-95d1-4aea-924e-6f60cb15f533",
+   "name": "LIMMA.ds0.contrast",
    "type": "string",
    "nRows": 0,
    "size": -1,
@@ -87,12 +87,12 @@
     "quartiles": [],
     "properties": []
    },
-   "storageSize": 0.0
+   "storageSize": -1.0
   },
   {
    "kind": "ColumnSchema",
-   "id": "a6d0ee26-5625-46ba-b144-12fa8711ef6c",
-   "name": "ds0..Variable",
+   "id": "9d442030-5bac-4947-aa4f-3d80244f43ab",
+   "name": "LIMMA.ds0..Variable",
    "type": "string",
    "nRows": 0,
    "size": -1,
@@ -103,12 +103,12 @@
     "quartiles": [],
     "properties": []
    },
-   "storageSize": 0.0
+   "storageSize": -1.0
   },
   {
    "kind": "ColumnSchema",
-   "id": "e8e9ce01-da06-4327-aa65-74c3a8cfa305",
-   "name": "ds0.logFC",
+   "id": "722689b6-fa85-4dfb-8ba0-23ebd68be4a9",
+   "name": "LIMMA.ds0.logFC",
    "type": "double",
    "nRows": 0,
    "size": -1,
@@ -119,12 +119,12 @@
     "quartiles": [],
     "properties": []
    },
-   "storageSize": 0.0
+   "storageSize": -1.0
   },
   {
    "kind": "ColumnSchema",
-   "id": "652d99ae-4169-43a1-803c-e9206f8beb8e",
-   "name": "ds0.pvalue",
+   "id": "69c06f42-2963-452b-81d4-7f5bf7a6db67",
+   "name": "LIMMA.ds0.pvalue",
    "type": "double",
    "nRows": 0,
    "size": -1,
@@ -135,12 +135,12 @@
     "quartiles": [],
     "properties": []
    },
-   "storageSize": 0.0
+   "storageSize": -1.0
   },
   {
    "kind": "ColumnSchema",
-   "id": "f20eb24d-67da-45c1-93bf-2ea02305d3af",
-   "name": "ds0.FDR",
+   "id": "e81902d5-dbd7-4a8f-a246-9d5b2c7f7243",
+   "name": "LIMMA.ds0.FDR",
    "type": "double",
    "nRows": 0,
    "size": -1,
@@ -151,14 +151,14 @@
     "quartiles": [],
     "properties": []
    },
-   "storageSize": 0.0
+   "storageSize": -1.0
   }
  ],
- "dataDirectory": "data/56/0d/560d55eda80e509637b1465c0f867715fbc1cb2188802b52ecd5a72d7431363d",
+ "dataDirectory": "data/c5/4c/c54cdc2a5059a6316165088d7eae70bdb20aa3693997b346d488e351872e1160",
  "relation": {
   "kind": "Relation",
-  "id": "860d2921-0c15-49b7-b672-dfcfefd62f85"
+  "id": "59ccc227-b1bf-4970-a786-e6a93000b1f8"
  },
- "size": 118536,
- "storageSize": 118536.0
+ "size": 0,
+ "storageSize": 118640.0
 }
