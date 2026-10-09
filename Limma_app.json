@@ -1,6 +1,6 @@
 {
  "kind": "Workflow",
- "id": "3",
+ "id": "2",
  "isDeleted": false,
  "rev": "",
  "description": "A simple workflow with one Table Step and one Data Step.",
@@ -21,11 +21,6 @@
  "urls": [],
  "tags": [],
  "meta": [
-  {
-   "kind": "Pair",
-   "key": "PUBLISHED",
-   "value": "true"
-  },
   {
    "kind": "Pair",
    "key": "document.template.repo.url",
@@ -62,12 +57,6 @@
    "id": "7c86c668-4a41-4089-94e6-378b30cfd79a",
    "inputId": "acd97782-d432-426e-b531-7b367f9d1de7-i-0",
    "outputId": "ebda5081-aae4-45fc-b91b-f7b4b19d402a-o-0"
-  },
-  {
-   "kind": "Link",
-   "id": "e70efe99-7260-4c44-a216-2c8cba40ab95",
-   "inputId": "c0d786a6-04e0-448e-8d3e-3e0ec83e49e4-i-0",
-   "outputId": "acd97782-d432-426e-b531-7b367f9d1de7-o-0"
   },
   {
    "kind": "Link",
@@ -113,20 +102,20 @@
   },
   {
    "kind": "Link",
-   "id": "bd4f647f-336f-4d65-82f1-2aea74aaceb5",
+   "id": "877f8d06-bc23-4a86-b1a1-ab4eeb3d1322",
    "inputId": "ebda5081-aae4-45fc-b91b-f7b4b19d402a-i-0",
    "outputId": "e86c99b9-0bf2-4725-b857-aa2063400e34-o-0"
   },
   {
    "kind": "Link",
-   "id": "b0da3de9-a112-4ef0-b71d-a760734da216",
+   "id": "7df54d40-58cf-459f-ac8b-ce9395c35600",
    "inputId": "e86c99b9-0bf2-4725-b857-aa2063400e34-i-0",
-   "outputId": "bdc32f35-fb22-4426-a903-4a40c0f0cffc-o-0"
+   "outputId": "c1cff72a-d906-46f4-8397-f86375447282-o-0"
   },
   {
    "kind": "Link",
-   "id": "a6d91dd9-8f12-48a2-88fd-69a03c3fb1fc",
-   "inputId": "6b5a3874-1ee4-4ccf-8e75-e2d6e77554d8-i-0",
+   "id": "4212bc37-d2e2-44ee-869b-c2ec2b290db3",
+   "inputId": "0115e3f9-11d1-4658-9b65-1657d434d999-i-0",
    "outputId": "ebda5081-aae4-45fc-b91b-f7b4b19d402a-o-0"
   }
  ],
@@ -338,7 +327,7 @@
       "kind": "OperatorRef",
       "name": "LIMMA PSA",
       "version": "0.0.7",
-      "operatorId": "2",
+      "operatorId": "1",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -399,7 +388,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "31f2bfe2-825b-40e1-ad6a-3f877fd52952"
+    "id": "b3b3eaf6-211b-40f3-bcb2-03cc752120bd"
    },
    "parentDataStepId": ""
   },
@@ -767,7 +756,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "40a66463-accb-4234-83b7-14c26c5caf0c"
+    "id": "ba365684-320c-4f9f-ba71-6b6605f1ebc7"
    },
    "parentDataStepId": ""
   },
@@ -811,7 +800,7 @@
    "kind": "DataStep",
    "id": "acd97782-d432-426e-b531-7b367f9d1de7",
    "groupId": "",
-   "name": "Select export",
+   "name": "Export",
    "inputs": [
     {
      "kind": "InputPort",
@@ -832,12 +821,12 @@
     "kind": "Rectangle",
     "extent": {
      "kind": "Point",
-     "x": 96.74786376953125,
+     "x": 88.99000000000001,
      "y": 55.0
     },
     "topLeft": {
      "kind": "Point",
-     "x": 572.6260681152344,
+     "x": 578.505,
      "y": 268.5
     }
    },
@@ -1000,22 +989,156 @@
      "namespace": "ds2",
      "operatorRef": {
       "kind": "OperatorRef",
-      "name": "",
-      "version": "",
-      "operatorId": "",
-      "operatorKind": "",
-      "propertyValues": [],
+      "name": "Export Table",
+      "version": "1.1.2",
+      "operatorId": "4",
+      "operatorKind": "DockerOperator",
+      "propertyValues": [
+       {
+        "kind": "PropertyValue",
+        "name": "format",
+        "value": "CSV"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "collapse_cols",
+        "value": "false"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "collapse_rows",
+        "value": "false"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "filename_prefix",
+        "value": "Limma_"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "export_to_project",
+        "value": "true"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "export_subfolder_name",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "export_subfolder_id",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "na_encoding",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "decimal_character",
+        "value": "."
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "data_separator",
+        "value": ","
+       }
+      ],
       "url": {
        "kind": "Url",
-       "uri": ""
+       "uri": "https://github.com/tercen/export_table_operator"
       },
       "operatorSpec": {
        "kind": "OperatorSpec",
-       "ontologyUri": "",
-       "ontologyVersion": "",
-       "inputSpecs": [],
+       "ontologyUri": "https://tercen.com/_ontology/tercen",
+       "ontologyVersion": "0.0.1",
+       "inputSpecs": [
+        {
+         "kind": "CrosstabSpec",
+         "metaFactors": [
+          {
+           "kind": "MetaFactor",
+           "name": "Rows",
+           "type": "",
+           "description": "Output table rows.",
+           "ontologyMapping": "variable",
+           "crosstabMapping": "row",
+           "cardinality": "1..n",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Columns",
+           "type": "",
+           "description": "Output table columns.",
+           "ontologyMapping": "observation",
+           "crosstabMapping": "column",
+           "cardinality": "1..n",
+           "factors": []
+          }
+         ],
+         "axis": [
+          {
+           "kind": "AxisSpec",
+           "metaFactors": [
+            {
+             "kind": "MetaFactor",
+             "name": "Measurement",
+             "type": "double",
+             "description": "Output table measurement values.",
+             "ontologyMapping": "measurement",
+             "crosstabMapping": "y",
+             "cardinality": "1",
+             "factors": []
+            }
+           ]
+          }
+         ]
+        }
+       ],
        "outputSpecs": [],
-       "outputSpecsV2": []
+       "outputSpecsV2": [
+        {
+         "kind": "OperatorJoinSpec",
+         "joinOperators": [
+          {
+           "kind": "JoinOperator",
+           "joinType": "left",
+           "leftPair": {
+            "kind": "ColumnPair",
+            "lColumns": [],
+            "rColumns": []
+           },
+           "rightRelation": {
+            "kind": "TableRelation",
+            "id": "",
+            "index": 0,
+            "meta_data": [],
+            "nRows": 0,
+            "data_dir": "",
+            "attributes": [
+             {
+              "kind": "Attribute",
+              "name": "filename",
+              "type": "string"
+             },
+             {
+              "kind": "Attribute",
+              "name": "mimetype",
+              "type": "string"
+             },
+             {
+              "kind": "Attribute",
+              "name": ".content",
+              "type": "string"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       ]
       }
      },
      "environment": [],
@@ -1156,54 +1279,15 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 200
+     "nRows": 1
     },
     "taskId": ""
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "c880734a-fcad-410c-9453-9b1e10724478"
+    "id": "d66973f5-ccd8-4f7a-8c04-adae6b8ecc1c"
    },
    "parentDataStepId": ""
-  },
-  {
-   "kind": "ExportStep",
-   "id": "c0d786a6-04e0-448e-8d3e-3e0ec83e49e4",
-   "groupId": "",
-   "name": "Export",
-   "inputs": [
-    {
-     "kind": "InputPort",
-     "id": "c0d786a6-04e0-448e-8d3e-3e0ec83e49e4-i-0",
-     "linkType": "relation",
-     "name": "data"
-    }
-   ],
-   "outputs": [],
-   "rectangle": {
-    "kind": "Rectangle",
-    "extent": {
-     "kind": "Point",
-     "x": 88.99000000000001,
-     "y": 55.0
-    },
-    "topLeft": {
-     "kind": "Point",
-     "x": 575.505,
-     "y": 354.5
-    }
-   },
-   "state": {
-    "kind": "StepState",
-    "taskId": "",
-    "taskState": {
-     "kind": "InitState"
-    }
-   },
-   "description": "Export selected data set to the current project.",
-   "model": {
-    "kind": "ExportModel"
-   }
   },
   {
    "kind": "DataStep",
@@ -1508,7 +1592,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "46aa181c-67c8-4063-8f7b-8cfda5cc685e"
+    "id": "2b6ac7d5-659e-46e4-8e1b-05cb51be7bef"
    },
    "parentDataStepId": ""
   },
@@ -1543,7 +1627,7 @@
     "topLeft": {
      "kind": "Point",
      "x": 836.2931289672852,
-     "y": 346.5
+     "y": 347.5
     }
    },
    "state": {
@@ -1854,7 +1938,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "ac24c71b-e57a-473a-be3a-56ffd29fa2a5"
+    "id": "75f31139-6ca8-466f-9e1a-6c3dd6b3d3c3"
    },
    "parentDataStepId": ""
   },
@@ -1882,7 +1966,7 @@
     "topLeft": {
      "kind": "Point",
      "x": 892.505,
-     "y": 431.5
+     "y": 432.5
     }
    },
    "state": {
@@ -2425,8 +2509,8 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "Count",
-      "version": "1.0.2",
-      "operatorId": "1",
+      "version": "1.1.1",
+      "operatorId": "3",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -2435,9 +2519,52 @@
       },
       "operatorSpec": {
        "kind": "OperatorSpec",
-       "ontologyUri": "",
-       "ontologyVersion": "",
-       "inputSpecs": [],
+       "ontologyUri": "https://tercen.com/_ontology/tercen",
+       "ontologyVersion": "0.0.1",
+       "inputSpecs": [
+        {
+         "kind": "CrosstabSpec",
+         "metaFactors": [
+          {
+           "kind": "MetaFactor",
+           "name": "Row",
+           "type": "",
+           "description": "Stratifying factor for rows (optional)",
+           "ontologyMapping": "row",
+           "crosstabMapping": "row",
+           "cardinality": "0..n",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Column",
+           "type": "",
+           "description": "Stratifying factor for columns (optional)",
+           "ontologyMapping": "column",
+           "crosstabMapping": "column",
+           "cardinality": "0..n",
+           "factors": []
+          }
+         ],
+         "axis": [
+          {
+           "kind": "AxisSpec",
+           "metaFactors": [
+            {
+             "kind": "MetaFactor",
+             "name": "Observations",
+             "type": "numeric",
+             "description": "Observations to be counted per cell",
+             "ontologyMapping": "observation",
+             "crosstabMapping": "y",
+             "cardinality": "1..n",
+             "factors": []
+            }
+           ]
+          }
+         ]
+        }
+       ],
        "outputSpecs": [],
        "outputSpecsV2": []
       }
@@ -2481,7 +2608,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "d3410d46-dd17-4d59-b63f-e657f9c869e0"
+    "id": "266b851b-2556-4a9c-9888-c002b652b5b4"
    },
    "parentDataStepId": ""
   },
@@ -2732,8 +2859,8 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "Count",
-      "version": "1.0.2",
-      "operatorId": "1",
+      "version": "1.1.1",
+      "operatorId": "3",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -2742,9 +2869,52 @@
       },
       "operatorSpec": {
        "kind": "OperatorSpec",
-       "ontologyUri": "",
-       "ontologyVersion": "",
-       "inputSpecs": [],
+       "ontologyUri": "https://tercen.com/_ontology/tercen",
+       "ontologyVersion": "0.0.1",
+       "inputSpecs": [
+        {
+         "kind": "CrosstabSpec",
+         "metaFactors": [
+          {
+           "kind": "MetaFactor",
+           "name": "Row",
+           "type": "",
+           "description": "Stratifying factor for rows (optional)",
+           "ontologyMapping": "row",
+           "crosstabMapping": "row",
+           "cardinality": "0..n",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Column",
+           "type": "",
+           "description": "Stratifying factor for columns (optional)",
+           "ontologyMapping": "column",
+           "crosstabMapping": "column",
+           "cardinality": "0..n",
+           "factors": []
+          }
+         ],
+         "axis": [
+          {
+           "kind": "AxisSpec",
+           "metaFactors": [
+            {
+             "kind": "MetaFactor",
+             "name": "Observations",
+             "type": "numeric",
+             "description": "Observations to be counted per cell",
+             "ontologyMapping": "observation",
+             "crosstabMapping": "y",
+             "cardinality": "1..n",
+             "factors": []
+            }
+           ]
+          }
+         ]
+        }
+       ],
        "outputSpecs": [],
        "outputSpecsV2": []
       }
@@ -2788,7 +2958,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "902af2b4-0739-407f-8d4c-4c3ac580e154"
+    "id": "805adbf0-f92f-4368-8f2b-98ab1b3289da"
    },
    "parentDataStepId": ""
   },
@@ -3028,8 +3198,8 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "Count",
-      "version": "1.0.2",
-      "operatorId": "1",
+      "version": "1.1.1",
+      "operatorId": "3",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -3038,9 +3208,52 @@
       },
       "operatorSpec": {
        "kind": "OperatorSpec",
-       "ontologyUri": "",
-       "ontologyVersion": "",
-       "inputSpecs": [],
+       "ontologyUri": "https://tercen.com/_ontology/tercen",
+       "ontologyVersion": "0.0.1",
+       "inputSpecs": [
+        {
+         "kind": "CrosstabSpec",
+         "metaFactors": [
+          {
+           "kind": "MetaFactor",
+           "name": "Row",
+           "type": "",
+           "description": "Stratifying factor for rows (optional)",
+           "ontologyMapping": "row",
+           "crosstabMapping": "row",
+           "cardinality": "0..n",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Column",
+           "type": "",
+           "description": "Stratifying factor for columns (optional)",
+           "ontologyMapping": "column",
+           "crosstabMapping": "column",
+           "cardinality": "0..n",
+           "factors": []
+          }
+         ],
+         "axis": [
+          {
+           "kind": "AxisSpec",
+           "metaFactors": [
+            {
+             "kind": "MetaFactor",
+             "name": "Observations",
+             "type": "numeric",
+             "description": "Observations to be counted per cell",
+             "ontologyMapping": "observation",
+             "crosstabMapping": "y",
+             "cardinality": "1..n",
+             "factors": []
+            }
+           ]
+          }
+         ]
+        }
+       ],
        "outputSpecs": [],
        "outputSpecsV2": []
       }
@@ -3084,19 +3297,19 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "8a9097a3-c65e-4844-95ad-8fb74a167a76"
+    "id": "4150cc7c-8b2b-40fc-b918-ee8ed4267fd6"
    },
    "parentDataStepId": ""
   },
   {
    "kind": "InStep",
-   "id": "bdc32f35-fb22-4426-a903-4a40c0f0cffc",
+   "id": "c1cff72a-d906-46f4-8397-f86375447282",
    "groupId": "",
    "name": "Input",
    "inputs": [
     {
      "kind": "InputPort",
-     "id": "bdc32f35-fb22-4426-a903-4a40c0f0cffc-i-0",
+     "id": "c1cff72a-d906-46f4-8397-f86375447282-i-0",
      "linkType": "any",
      "name": "from"
     }
@@ -3104,7 +3317,7 @@
    "outputs": [
     {
      "kind": "OutputPort",
-     "id": "bdc32f35-fb22-4426-a903-4a40c0f0cffc-o-0",
+     "id": "c1cff72a-d906-46f4-8397-f86375447282-o-0",
      "linkType": "any",
      "name": "to"
     }
@@ -3118,8 +3331,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 740.8383333333338,
-     "y": -36.16666666666626
+     "x": 734.8383333333338,
+     "y": -23.16666666666626
     }
    },
    "state": {
@@ -3138,13 +3351,13 @@
   },
   {
    "kind": "OutStep",
-   "id": "6b5a3874-1ee4-4ccf-8e75-e2d6e77554d8",
+   "id": "0115e3f9-11d1-4658-9b65-1657d434d999",
    "groupId": "",
    "name": "Output",
    "inputs": [
     {
      "kind": "InputPort",
-     "id": "6b5a3874-1ee4-4ccf-8e75-e2d6e77554d8-i-0",
+     "id": "0115e3f9-11d1-4658-9b65-1657d434d999-i-0",
      "linkType": "any",
      "name": "from"
     }
@@ -3152,7 +3365,7 @@
    "outputs": [
     {
      "kind": "OutputPort",
-     "id": "6b5a3874-1ee4-4ccf-8e75-e2d6e77554d8-o-0",
+     "id": "0115e3f9-11d1-4658-9b65-1657d434d999-o-0",
      "linkType": "any",
      "name": "to"
     }
@@ -3166,8 +3379,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 933.505,
-     "y": 144.6111111111111
+     "x": 892.505,
+     "y": 171.6111111111111
     }
    },
    "state": {
@@ -3187,8 +3400,8 @@
  ],
  "offset": {
   "kind": "Point",
-  "x": -9.33333333333377,
-  "y": 188.66666666666626
+  "x": 70.66666666666623,
+  "y": 96.66666666666626
  },
  "scale": 1.0
 }
