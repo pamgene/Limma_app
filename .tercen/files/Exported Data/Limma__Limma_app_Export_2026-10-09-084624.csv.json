@@ -1,0 +1,43 @@
+{
+ "kind": "FileDocument",
+ "id": "Exported Data/Limma__Limma_app_Export_2026-10-09-084624.csv",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "Limma__Limma_app_Export_2026-10-09-084624.csv",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": true,
+ "projectId": "",
+ "folderId": "5",
+ "dataUri": "lfs/34/c3/9b011452451f7ce8411483da95dd511a464836fb5cc42d5db2b04e7521f3",
+ "metadata": {
+  "kind": "FileMetadata",
+  "contentType": "",
+  "cacheControl": "",
+  "contentEncoding": "",
+  "contentLanguage": "",
+  "md5Hash": ""
+ },
+ "size": 0,
+ "storageSize": 19235.0
+}
